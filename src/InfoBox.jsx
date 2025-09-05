@@ -22,17 +22,17 @@ function InfoBox({ info }) {
       >
         <CardContent>
           <Typography variant="h5" gutterBottom>
-            {info.city || "—"}
+            {info.city || ""}
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
-            {info.weather || "—"}
+            {info.weather || ""}
           </Typography>
-          <Typography>🌡️ Temperature: {info.temp ?? "—"}°C</Typography>
-          <Typography>🤒 Feels like: {info.feelsLike ?? "—"}°C</Typography>
+          <Typography>🌡️ Temperature: {info.temp ?? ""}°C</Typography>
+          <Typography>🤒 Feels like: {info.feelsLike ?? ""}°C</Typography>
           <Typography>
-            ⬇️ Min: {info.tempMin ?? "—"}°C &nbsp; | &nbsp; ⬆️ Max: {info.tempMax ?? "—"}°C
+            ⬇️ Min: {info.tempMin ?? ""}°C &nbsp; | &nbsp; ⬆️ Max: {info.tempMax ?? ""}°C
           </Typography>
-          <Typography>💧 Humidity: {info.humidity ?? "—"}%</Typography>
+          <Typography>💧 Humidity: {info.humidity ?? ""}%</Typography>
         </CardContent>
       </Card>
     </div>

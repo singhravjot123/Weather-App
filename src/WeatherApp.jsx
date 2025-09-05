@@ -7,13 +7,13 @@ import { weatherCodeMap } from "./weatherCodes.js";
 
 export default function WeatherApp() {
     const [weatherinfo, setWeatherInfo] = useState({
-        city: "Wonderland",
-        feelsLike: 24.84,
-        temp: 25.05,
-        tempMax: 25.05,
-        tempMin: 25.05,
-        humidity: 47,
-        weather: "Clear sky",
+        city: "",
+        feelsLike:0,
+        temp:0,
+        tempMax:0,
+        tempMin:0,
+        humidity:0,
+        weather: "",
         code: 0,
     });
 
@@ -115,7 +115,7 @@ export default function WeatherApp() {
 
             {/* Foreground content (above backgrounds) */}
             <div style={contentStyle}>
-                <h2 style={{ margin: 0, paddingBottom: 6 }}>Weather Info by My App</h2>
+                <h2 style={{ margin: 0, paddingBottom: 6 }}>Weather Now</h2>
 
                 {/* SearchPanel must call updateInfo(result) */}
                 <SearchPanel updateInfo={updateInfo} />

@@ -53,14 +53,15 @@ export default function SearchPanel({ updateInfo }) {
       return null;
     }
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!city.trim()) return;
     const info = await getWeatherInfo(city.trim());
     if (info) updateInfo(info);
-    setCity("");
+    setCity(city);
   };
+
+
 
   return (
     <Box
@@ -87,9 +88,10 @@ export default function SearchPanel({ updateInfo }) {
         variant="outlined"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-        InputProps={{ style: { color: "white" } }}
+       InputProps={{ style: { color: "white" } }}
         InputLabelProps={{ style: { color: "white" } }}
         sx={{ flex: 1 }}
+        autoComplete="off"  
       />
       <Button type="submit" variant="contained" sx={{ whiteSpace: "nowrap" }}>
         Search
