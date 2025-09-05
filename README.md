@@ -21,5 +21,7 @@ Technology Stack:
 
  Application Flow:
   
-    When a user enter a city name into the (SearchPanel.jsx) component and click on search button,the SearchPanel component handles the asynchronous API call to fetch the corresponding weather data. On receiving a success result, the SearchPanel calls the updateInfo function and pass down as a prop to its parent component (WeatherApp.jsx). The updateInfo function in WeatherApp updates the weatherinfo state, which triggers a re-render of the component. During the re-render, the new weatherinfo state is passed down as a prop to the (InfoBox.jsx) component, which then displays the updated weather details to the user.
+    When a user enter a city name into the (SearchPanel.jsx) component and click on search button,the SearchPanel component handles the asynchronous API call to fetch the corresponding weather data. On receiving a success result, the SearchPanel calls the updateInfo function and pass down as a prop to its parent component (WeatherApp.jsx). The updateInfo function in WeatherApp updates the weatherinfo state, which triggers a re-render of the component. During the re-render, the new weatherinfo state is passed down as a prop to the 
+   (InfoBox.jsx) component, which then displays the updated weather details to the user.
 
+ Link->https://codesandbox.io/p/github/singhravjot123/Weather-App/main
